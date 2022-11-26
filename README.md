@@ -10,7 +10,7 @@ Materials for Neural Networks via FluCoMa workshop hosted by Music Hackspace
 
 * classic regressor control
 * jitter camera down sampled as input
-* eyeball (or other video tracking data)
+<!-- * eyeball (or other video tracking data) -->
 
 ### Regression with Audio Descriptors
 
