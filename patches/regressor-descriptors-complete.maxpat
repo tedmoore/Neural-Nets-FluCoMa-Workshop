@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 105.0, 1208.0, 805.0 ],
+		"rect" : [ 34.0, 87.0, 1307.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 477.600007116794586, 434.147058823529505, 34.0, 22.0 ],
+					"text" : "write"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-106",
 					"maxclass" : "newobj",
@@ -112,6 +124,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-97",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -281,9 +294,9 @@
 								"filename" : "Harker-DS-TenOboeMultiphonics-M.wav",
 								"filekind" : "audiofile",
 								"id" : "u160003153",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
@@ -400,6 +413,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-153",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -431,7 +445,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 846.0, 563.0, 138.0, 91.0 ],
 					"setminmax" : [ 0.0, 0.5 ],
-					"setstyle" : 3
+					"setstyle" : 5
 				}
 
 			}
@@ -442,7 +456,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 500.0, 429.147058823529505, 35.0, 22.0 ],
+					"patching_rect" : [ 512.000000178813934, 392.147058823529505, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -551,7 +565,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 297.0, 250.0, 50.0, 22.0 ],
-									"text" : "23"
+									"text" : "50"
 								}
 
 							}
@@ -600,7 +614,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 627.0, 548.0, 50.0, 22.0 ],
-									"text" : "4.9648"
+									"text" : "5.1"
 								}
 
 							}
@@ -612,7 +626,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 409.0, 553.0, 50.0, 22.0 ],
-									"text" : "464.92"
+									"text" : "332.36"
 								}
 
 							}
@@ -625,7 +639,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 183.0, 553.0, 44.0, 35.0 ],
-									"text" : "148.87"
+									"text" : "376.93"
 								}
 
 							}
@@ -1673,7 +1687,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 589.0, 738.941176470588516, 113.0, 22.0 ],
+					"patching_rect" : [ 546.599999368190765, 734.141176399062942, 113.0, 22.0 ],
 					"text" : "send fancy_params"
 				}
 
@@ -1685,8 +1699,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 718.0, 738.941176470588516, 253.0, 22.0 ],
-					"text" : "0.000347 0.934752 0.128627"
+					"patching_rect" : [ 675.599999368190765, 734.141176399062942, 253.0, 22.0 ],
+					"text" : "135.394547 496.192413 1.461582"
 				}
 
 			}
@@ -1697,7 +1711,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "list" ],
-					"patching_rect" : [ 589.0, 698.941176470588516, 195.0, 22.0 ],
+					"patching_rect" : [ 546.599999368190765, 694.141176399062942, 195.0, 22.0 ],
 					"text" : "fluid.buf2list @source new_params"
 				}
 
@@ -1709,7 +1723,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 590.0, 665.941176470588516, 159.0, 22.0 ],
+					"patching_rect" : [ 546.599999368190765, 661.941176410983871, 159.0, 22.0 ],
 					"text" : "select inversetransformpoint"
 				}
 
@@ -1721,7 +1735,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 789.0, 698.941176470588516, 182.0, 22.0 ],
+					"patching_rect" : [ 746.599999368190765, 694.141176399062942, 182.0, 22.0 ],
 					"text" : "buffer~ new_params @samps 3"
 				}
 
@@ -2157,8 +2171,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 547.0, 463.147058823529505, 285.0, 49.0 ],
-					"text" : "fluid.mlpregressor~ nn @hidden 3 3 @activation 0 @outputactivation 0 @batchsize 2 @maxiter 100 @learnrate 0.05 @validation 0 @momentum 0.9"
+					"patching_rect" : [ 547.0, 463.147058823529505, 303.999993503093719, 49.0 ],
+					"text" : "fluid.mlpregressor~ nn @hiddenlayers 3 3 @activation 0 @outputactivation 0 @batchsize 2 @maxiter 100 @learnrate 0.05 @validation 0 @momentum 0.9"
 				}
 
 			}
@@ -2755,6 +2769,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-75", 0 ]
 				}
 
@@ -2870,56 +2891,56 @@
 		"dependency_cache" : [ 			{
 				"name" : "Harker-DS-TenOboeMultiphonics-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Nicol-LoopE-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Olencki-TenTromboneLongTones-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tremblay-ASWINE-ScratchySynth-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tremblay-AaS-SynthTwoVoices-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tremblay-AaS-VoiceQC-B2K-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tremblay-CF-ChurchBells.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tremblay-SA-UprightPianoPedalWide.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
