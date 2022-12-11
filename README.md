@@ -1,6 +1,8 @@
 # Neural-Nets-Music-Hackspace
 Materials for Neural Networks via FluCoMa workshop hosted by Music Hackspace
 
+Dec. 11, 2022
+
 ### Workshop Leader:
 
 Ted Moore
